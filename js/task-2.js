@@ -36,17 +36,15 @@ const images = [
     alt: 'Zebras on Zebra',
   },
  ];
-const imageGallery = document.querySelector("#gallery");
-const pageImages = document.createDocumentFragment();
-images.forEach(el => {
-  const childUl = document.createElement("li");
-  const img = document.createElement("img");
-  img.url = el.url;
-  img.alt = el.alt;
-  childUl.appendChild(img);
-  pageImages.appendChild(childUl);
-});
-imageGallery.appendChild(pageImages)
+
+const ImageGallery = document.querySelector('.gallery');
+const listNames = images.map((image) => `<li><img src =${image.url} alt=${image.alt}></li>`);
+ImageGallery.insertAdjacentHTML("beforeend", listNames)
+
+
+
+
+
 
 
 
