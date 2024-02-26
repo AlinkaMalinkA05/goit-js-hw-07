@@ -11,7 +11,7 @@ function handleInputChange() {
     if (inputPrint === "") {
         nameOutput.textContent = "Anonymous";
     } else {
-    nameOutput.textContent === inputPrint
+    nameOutput.textContent = inputPrint
     }
 }
  console.dir(nameOutput)
