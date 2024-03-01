@@ -36,9 +36,27 @@ li {
   letter-spacing: 0.04em;
   color: #2e2f42;
 }
-.li {
-  border: 1px solid #808080;
-  border-radius: 4px;
+#gallery {
+  width: 1128px;
+  height: 300px;
+  background: #fff;
+}
+img {
+  width: 360px;
+  height: 300px;
+}
+#name-input {
+  border-radius: 8px;
+  padding: 24px;
   width: 360px;
   height: 40px;
+}
+
+button {
+  background: #4e75ff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  line-height: none;
 }
