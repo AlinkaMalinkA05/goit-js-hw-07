@@ -14,4 +14,3 @@ function handleInputChange() {
     nameOutput.textContent = inputPrint
     }
 }
- console.dir(nameOutput)
