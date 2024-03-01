@@ -14,7 +14,10 @@ createBtn.addEventListener('click', () => {
   if (amount >= 1 && amount <= 100) {
     createBoxes(amount);
     input.value = '';
-  } 
+    input.classList.remove("error")
+  } else {
+    input.classList.add("error")
+  }
 });
 
 destroyBtn.addEventListener('click', destroyBoxes);
@@ -32,4 +35,6 @@ function createBoxes(amount) {
 
 function destroyBoxes() {
   boxesContainer.innerHTML = '';
+  input.value = "";
+  input.classList.remove("error")
 }
